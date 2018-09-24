@@ -69,7 +69,7 @@
       <AdditionalIncludeDirectories>$(ProjectDir)..\BasicUpload;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\Servo\src;$(ProjectDir)..\..\..\..\..\..\Program Files (x86)\Arduino\libraries;$(ProjectDir)..\..\..\..\..\..\Data\Arduino\libraries;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\avr;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\libb64;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\spiffs;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266\umm_malloc;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\tools\sdk\include;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\tools\sdk\lwip2\include;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\tools\sdk\libc\xtensa-lx106-elf\include;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include\c++\4.8.2\xtensa-lx106-elf;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\xtensa-lx106-elf\include;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\tools\xtensa-lx106-elf-gcc\1.20.0-26-gb404fb9-2\lib\gcc\xtensa-lx106-elf\4.8.2\include;$(ProjectDir)..\..\..\..\..\..\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\tools\sdk\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ProjectDir)__vm\.BasicUpload.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>false</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>__ESP8266_ESp8266__;__ESP8266_ESP8266__;__ets__;ICACHE_FLASH;F_CPU=80000000L;LWIP_OPEN_SRC;TCP_MSS=536;ARDUINO=10807;ARDUINO_ESP8266_NODEMCU;ARDUINO_ARCH_ESP8266;ESP8266;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>__ESP8266_ESp8266__;__ESP8266_ESP8266__;_VMDEBUG=1;__ets__;ICACHE_FLASH;F_CPU=80000000L;LWIP_OPEN_SRC;TCP_MSS=536;ARDUINO=10807;ARDUINO_ESP8266_NODEMCU;ARDUINO_ARCH_ESP8266;ESP8266;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -101,7 +101,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MotorController.h" />
+    <ClInclude Include="PWM.h" />
+    <ClInclude Include="PWMSpeedController.h" />
     <ClInclude Include="__vm\.BasicUpload.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MotorController.cpp" />
+    <ClCompile Include="PWM.cpp" />
+    <ClCompile Include="PWMSpeedController.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

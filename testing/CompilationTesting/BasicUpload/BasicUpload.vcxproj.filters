@@ -21,5 +21,25 @@
     <ClInclude Include="__vm\.BasicUpload.vsarduino.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="MotorController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PWM.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PWMSpeedController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MotorController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PWM.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PWMSpeedController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

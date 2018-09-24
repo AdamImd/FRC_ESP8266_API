@@ -59,4 +59,5 @@ C:\Users\witts\AppData\Local\Temp\VMBuilds\BasicUpload\esp8266_nodemcuv2\Debug\B
  C:\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\cores\esp8266/debug.h \
  C:\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/pins_arduino.h \
  C:\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\variants\nodemcu/../generic/common.h \
- C:\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\Servo\src/Servo.h
+ C:\Users\witts\AppData\Local\arduino15\packages\esp8266\hardware\esp8266\2.4.2\libraries\Servo\src/Servo.h \
+ C:\Program\ Files\ (x86)\Microsoft\ Visual\ Studio\2017\Community\Common7\IDE\Extensions\mcovr5xb.z02\Micro\ Platforms\default\debuggers\VM_DBG/VM_DBG.h
