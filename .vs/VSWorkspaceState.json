@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\src",
+    "\\src\\Protocols",
     "\\testing"
   ],
-  "SelectedNode": "\\README.md",
+  "SelectedNode": "\\src\\Protocols\\PWMSpeedController.cpp",
   "PreviewInSolutionExplorer": false
 }
