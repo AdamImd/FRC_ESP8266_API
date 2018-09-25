@@ -11,10 +11,12 @@ private:
 	int p_DefaultPulsewidth;
 	int p_MinimumPulseWidth;
 	int p_MaximumPulseWidth;
+	double p_Speed;
 protected:
-	PWMSpeedController(int channel, int defaultPulseWidth, int minimumPulseWidth, int maximumPulseWidth);
-	void PWMspeed(double speed);
+	PWMSpeedController(int channel, int defaultPulseWidth, int minimumPulseWidth, int maximumPulseWidth, int refreshInterval);
 public:
+	double PWMGetSpeed();
+	void PWMspeed(double speed);
 	void setBounds(int defaultPulseWidth, int minimumPulseWidth, int maximumPulseWidth);
 };
 
